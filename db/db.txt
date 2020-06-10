@@ -1,0 +1,23 @@
+create database testdb1;
+
+use testdb1;
+
+show tables;
+
+select * from users;
+
+insert into users(id,email,password,username) values(1,'ajay@gmail.com','$2a$10$jw5SrNEKYiFsr1xqQi3xEOR6giOz4shrPkJHoMxBYDf7RFrSi42A2','ajay');
+
+select * from roles;
+
+insert into roles values(1,'ROLE_FACULTY');
+
+insert into roles values(2,'ROLE_STUDENT');
+
+insert into roles values(3,'ROLE_ADMIN');
+
+select * from user_roles;
+
+insert into user_roles values(1,1);
+
+select * from course;

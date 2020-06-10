@@ -1,0 +1,24 @@
+<div class="container align-center">
+    <div class="alert alert-success" role="alert">
+      <a href="#" class="alert-link">{{message}}</a>
+    </div>
+  <div [hidden]="submitted" style="width: 400px;">
+    <h3>Add Course :-</h3>
+    <form (ngSubmit)="onSubmit()">
+    
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" placeholder="Enter course name" id="name" required [(ngModel)]="course.name" name="name">
+      </div>
+      
+    <div class="form-group">
+        <label for="name">Description:</label>
+        <input type="text" class="form-control" placeholder="Description of course" id="Description" required [(ngModel)]="course.description" name="Description">
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button> 
+    </form>
+  </div>
+  </div>
+  
+  
+  
